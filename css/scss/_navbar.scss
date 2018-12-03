@@ -1,0 +1,20 @@
+.navbar {
+    justify-content: flex-start;
+    box-shadow: $box-shadow-sm;
+
+    &-toggler {
+        border: unset;
+    }
+
+    &-brand {
+        @include media-breakpoint-down(lg) {
+            flex-grow: 1;
+            text-align: center;
+            height: 44px;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}

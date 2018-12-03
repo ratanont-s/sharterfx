@@ -1,0 +1,7 @@
+.text-shadow {
+    text-shadow: 0 .1rem .3rem black;
+
+    &-sm {
+        text-shadow: 0 .1rem .3rem rgba(black, .3);
+    }
+}

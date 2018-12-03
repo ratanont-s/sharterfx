@@ -1,0 +1,353 @@
+.landing-page {
+    #secHead {
+        background: transparent url('../../images/bg-head.png') no-repeat center top;
+        background-size: cover;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 100px;
+            background-attachment: fixed;
+        }
+
+        @include media-breakpoint-down(xs) {
+            img {
+                width: 200px;
+            }
+        }
+
+        h1 {
+            color: $gold;
+            font-family: $font-pt;
+
+            @include media-breakpoint-down(xs) {
+                font-size: 17px;
+            }
+        }
+
+        h2 {
+            color: lighten($gold, 10%);
+            font-family: $font-pt;
+
+            @include media-breakpoint-down(xs) {
+                font-size: 10px;
+            }
+        }
+    }
+
+    #secStart {
+        background: transparent url('../../images/bg-start.png') no-repeat center top;
+        background-size: cover;
+        text-align: center;
+        padding: 5rem 0;
+    }
+
+    #secAccType {
+        background: transparent url('../../images/bg-acc-type.png') no-repeat center top;
+        background-size: cover;
+        padding: 5rem 0;
+
+        @include media-breakpoint-up(xl) {
+            background-attachment: fixed;
+        }
+
+        .card {
+            border: unset;
+            background-color: rgba(white, .8);
+            box-shadow: $box-shadow;
+            border-radius: .875rem;
+            height: calc(100% - 3.75rem);
+            margin-bottom: 3.75rem;
+
+            &-header {
+                text-align: center;
+                font-size: 2.25rem;
+
+                @include media-breakpoint-down(xs) {
+                    font-size: 14px;
+                }
+            }
+
+            &-price {
+                color: white;
+                text-align: center;
+                padding: 1rem 0;
+                background-clip: padding-box;
+
+                p {
+                    font-size: 1.3125rem;
+                }
+
+                h1 {
+                    font-size: 4.25rem;
+
+                    @include media-breakpoint-down(xs) {
+                        font-size: 24px;
+                    }
+
+                    small {
+                        font-size: 30%;
+                        vertical-align: text-top;
+                    }
+                }
+
+
+
+                .btn {
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    box-shadow: $box-shadow-sm;
+                }
+            }
+
+            &-body {
+                color: $primary;
+                font-size: 1.25rem;
+
+                @include media-breakpoint-down(xs) {
+                    padding: .5rem;
+                    font-size: 8px;
+                }
+            }
+
+            &-cent {
+                .card-header {
+                    color: $cent;
+                }
+
+                .card-price {
+                    @include gradient-x($start-color: $bg-cent-start, $end-color: $bg-cent-end, $start-percent: 0%, $end-percent: 100%);
+                }
+            }
+
+            &-mini {
+                .card-header {
+                    color: $mini;
+                }
+
+                .card-price {
+                    @include gradient-x($start-color: $bg-mini-start, $end-color: $bg-mini-end, $start-percent: 0%, $end-percent: 100%);
+                }
+            }
+
+            &-classic {
+                .card-header {
+                    color: $classic;
+                }
+
+                .card-price {
+                    @include gradient-x($start-color: $bg-classic-start, $end-color: $bg-classic-end, $start-percent: 0%, $end-percent: 100%);
+                }
+            }
+
+            &-standard {
+                .card-header {
+                    color: $standard;
+                }
+
+                .card-price {
+                    @include gradient-x($start-color: $bg-standard-start, $end-color: $bg-standard-end, $start-percent: 0%, $end-percent: 100%);
+                }
+            }
+
+            &-premium {
+                .card-header {
+                    color: $premium;
+                }
+
+                .card-price {
+                    @include gradient-x($start-color: $bg-premium-start, $end-color: $bg-premium-end, $start-percent: 0%, $end-percent: 100%);
+                }
+            }
+
+            &-vip {
+                .card-header {
+                    color: $vip;
+                }
+
+                .card-price {
+                    @include gradient-x($start-color: $bg-vip-start, $end-color: $bg-vip-end, $start-percent: 0%, $end-percent: 100%);
+                }
+            }
+        }
+    }
+
+    #secTrade {
+        background: transparent url('../../images/bg-trade.png') no-repeat center top;
+        background-size: cover;
+        padding: 5rem 0;
+
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 0;
+        }
+
+        .trade-content {
+            position: relative;
+
+            @include media-breakpoint-up(xl) {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    width: 100%;
+                    height: 75%;
+                    background: transparent url('../../images/bg-trade-color.png') no-repeat center top;
+                    background-size: cover;
+                    box-shadow: $box-shadow;
+                }
+            }
+
+            &-text {
+                @include media-breakpoint-down(lg) {
+                    position: relative;
+                    padding-top: 2.5rem;
+                    padding-bottom: 2.5rem;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: auto;
+                        width: 100%;
+                        height: 100%;
+                        background: transparent url('../../images/bg-trade-color.png') no-repeat center top;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    #secWorld {
+        background: transparent url('../../images/bg-world.png') no-repeat left top;
+        background-size: cover;
+        padding: 5rem 0;
+
+        h1 {
+            @include media-breakpoint-down(xs) {
+                font-size: 12px;
+            }
+        }
+
+        .world-content {
+            color: #E0F4FA;
+
+            h3 {
+                font-weight: 300;
+            }
+
+            @include media-breakpoint-down(xs) {
+
+                h2,
+                h3 {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+
+    #secLeader {
+        background: transparent url('../../images/bg-leader.png') no-repeat center top;
+        background-size: cover;
+        padding: 5rem 0;
+
+        @include media-breakpoint-up(xl) {
+            background-attachment: fixed;
+
+            h1 {
+                font-size: 3.4375rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        h1 {
+            color: #EAFCFF;
+        }
+
+        h2 {
+            color: #C9F7FF;
+            font-weight: 400;
+        }
+
+        @include media-breakpoint-down(xs) {
+            h1 {
+                font-size: 15px;
+            }
+
+            h2 {
+                font-size: 10px;
+            }
+        }
+
+        .card {
+            border-radius: 2rem;
+            border: unset;
+            overflow: hidden;
+            box-shadow: $box-shadow;
+            height: calc(100% - 3.375rem);
+            margin-bottom: 3.375rem;
+
+            &-img-top {
+                position: relative;
+
+                img {
+                    width: 100%;
+                }
+
+
+            }
+
+            &-title {
+                position: absolute;
+                bottom: -1.75rem;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background-color: #BAE1E6;
+                color: $primary;
+                text-align: center;
+                width: fit-content;
+                padding: .5rem 1.75rem;
+                font-size: 1.75rem;
+                border-radius: .5rem;
+
+
+            }
+
+            &-body {
+                color: $primary;
+            }
+
+            @include media-breakpoint-up(xl) {
+                &-body {
+                    font-size: 1.4375rem;
+                    padding-top: 3rem;
+                }
+            }
+
+            @include media-breakpoint-down(xs) {
+                &-title {
+                    font-size: 8px;
+                    padding: .25rem .25rem;
+                    bottom: -1rem;
+                }
+
+                &-body {
+                    font-size: 7px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
