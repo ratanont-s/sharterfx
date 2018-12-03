@@ -1,6 +1,6 @@
 .landing-page {
     #secHead {
-        background: transparent url('../../images/bg-head.png') no-repeat center top;
+        background: transparent url('../images/bg-head.png') no-repeat center top;
         background-size: cover;
         text-align: center;
         min-height: 100vh;
@@ -39,14 +39,14 @@
     }
 
     #secStart {
-        background: transparent url('../../images/bg-start.png') no-repeat center top;
+        background: transparent url('../images/bg-start.png') no-repeat center top;
         background-size: cover;
         text-align: center;
         padding: 5rem 0;
     }
 
     #secAccType {
-        background: transparent url('../../images/bg-acc-type.png') no-repeat center top;
+        background: transparent url('../images/bg-acc-type.png') no-repeat center top;
         background-size: cover;
         padding: 5rem 0;
 
@@ -176,7 +176,7 @@
     }
 
     #secTrade {
-        background: transparent url('../../images/bg-trade.png') no-repeat center top;
+        background: transparent url('../images/bg-trade.png') no-repeat center top;
         background-size: cover;
         padding: 5rem 0;
 
@@ -197,7 +197,7 @@
                     margin: auto;
                     width: 100%;
                     height: 75%;
-                    background: transparent url('../../images/bg-trade-color.png') no-repeat center top;
+                    background: transparent url('../images/bg-trade-color.png') no-repeat center top;
                     background-size: cover;
                     box-shadow: $box-shadow;
                 }
@@ -218,7 +218,7 @@
                         margin: auto;
                         width: 100%;
                         height: 100%;
-                        background: transparent url('../../images/bg-trade-color.png') no-repeat center top;
+                        background: transparent url('../images/bg-trade-color.png') no-repeat center top;
                         background-size: cover;
                     }
                 }
@@ -227,7 +227,7 @@
     }
 
     #secWorld {
-        background: transparent url('../../images/bg-world.png') no-repeat left top;
+        background: transparent url('../images/bg-world.png') no-repeat left top;
         background-size: cover;
         padding: 5rem 0;
 
@@ -255,7 +255,7 @@
     }
 
     #secLeader {
-        background: transparent url('../../images/bg-leader.png') no-repeat center top;
+        background: transparent url('../images/bg-leader.png') no-repeat center top;
         background-size: cover;
         padding: 5rem 0;
 
