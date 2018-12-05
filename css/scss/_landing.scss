@@ -1,116 +1,210 @@
 .landing-page {
+    section {
+        padding: 2.5rem 0;
+
+        .text-header {
+            text-align: center;
+            color: darken($primary, 15%);
+            margin-bottom: 2.5rem;
+
+            h3 {
+                font-weight: 400;
+            }
+        }
+    }
+
     #secHead {
         background: transparent url('../images/bg-head.png') no-repeat center top;
         background-size: cover;
-        text-align: center;
-        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        min-height: 100vh;
 
-        @include media-breakpoint-up(xl) {
-            margin-top: 100px;
-            background-attachment: fixed;
+        img {
+            max-height: 250px;
         }
 
-        @include media-breakpoint-down(xs) {
-            img {
-                width: 200px;
-            }
+        h1,
+        h2 {
+            font-family: $font-pt;
         }
 
         h1 {
             color: $gold;
-            font-family: $font-pt;
-
-            @include media-breakpoint-down(xs) {
-                font-size: 17px;
-            }
         }
 
         h2 {
             color: lighten($gold, 10%);
-            font-family: $font-pt;
+        }
 
-            @include media-breakpoint-down(xs) {
-                font-size: 10px;
-            }
+        @include media-breakpoint-up(xl) {
+            background-attachment: fixed;
         }
     }
 
     #secStart {
         background: transparent url('../images/bg-start.png') no-repeat center top;
         background-size: cover;
-        text-align: center;
-        padding: 5rem 0;
+
+        .container-fluid {
+            max-width: 1488px;
+        }
+
+        .card-step {
+            overflow-x: auto;
+            white-space: nowrap;
+
+            .d-flex {
+                .flex-item {
+                    margin-right: -6rem;
+                }
+            }
+        }
+
+        .card {
+            background-color: unset;
+            border: unset;
+            text-align: center;
+            height: calc(100% - 1.5rem);
+            margin-bottom: 1.5rem;
+
+            &-header {
+                color: white;
+                font-weight: 600;
+                border-bottom: unset;
+                min-height: 7rem;
+            }
+
+            &-body {
+                padding-left: 3.5rem;
+                padding-right: 3.5rem;
+                min-height: 8.5rem;
+            }
+
+            &-up {
+                .card-header {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    margin-bottom: .5rem;
+                }
+
+                .card-body {
+                    background: transparent url('../images/bg-triangle-up-bottom.png') no-repeat center bottom;
+                    background-size: 100% 100%;
+                }
+
+                &-blue {
+                    .card-header {
+                        background: transparent url('../images/bg-triangle-up-top-blue.png') no-repeat center center;
+                        background-size: contain;
+                    }
+
+                    .card-body {
+                        color: #7DBDC7;
+                    }
+                }
+
+                &-yellow {
+                    .card-header {
+                        background: transparent url('../images/bg-triangle-up-top-yellow.png') no-repeat center center;
+                        background-size: contain;
+                    }
+
+                    .card-body {
+                        color: #F0AC2D;
+                    }
+                }
+            }
+
+            &-down {
+                .card-header {
+                    margin-top: .5rem;
+                }
+
+                .card-body {
+                    background: transparent url('../images/bg-triangle-down-top.png') no-repeat center top;
+                    background-size: 100% 100%;
+                }
+
+                &-pink {
+                    .card-header {
+                        background: transparent url('../images/bg-triangle-down-bottom-pink.png') no-repeat center center;
+                        background-size: contain;
+                    }
+
+                    .card-body {
+                        color: #E54178;
+                    }
+                }
+
+                &-red {
+                    .card-header {
+                        background: transparent url('../images/bg-triangle-down-bottom-red.png') no-repeat center center;
+                        background-size: contain;
+                    }
+
+                    .card-body {
+                        color: #E24906;
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-down(xs) {}
     }
 
     #secAccType {
         background: transparent url('../images/bg-acc-type.png') no-repeat center top;
         background-size: cover;
-        padding: 5rem 0;
 
-        @include media-breakpoint-up(xl) {
-            background-attachment: fixed;
+        .container-fluid {
+            max-width: 1314px;
         }
 
         .card {
             border: unset;
+            border-radius: 1rem;
             background-color: rgba(white, .8);
+            height: calc(100% - 1.5rem);
+            margin-bottom: 1.5rem;
             box-shadow: $box-shadow;
-            border-radius: .875rem;
-            height: calc(100% - 3.75rem);
-            margin-bottom: 3.75rem;
+            @include transition($transition-base);
+
+            &:hover {
+                transform: translateY(-.5rem);
+                box-shadow: $box-shadow-lg;
+                @include transition($transition-base);
+            }
 
             &-header {
                 text-align: center;
-                font-size: 2.25rem;
-
-                @include media-breakpoint-down(xs) {
-                    font-size: 14px;
-                }
             }
 
             &-price {
                 color: white;
                 text-align: center;
-                padding: 1rem 0;
                 background-clip: padding-box;
-
-                p {
-                    font-size: 1.3125rem;
-                }
+                padding: 1rem 0;
 
                 h1 {
-                    font-size: 4.25rem;
-
-                    @include media-breakpoint-down(xs) {
-                        font-size: 24px;
-                    }
-
                     small {
-                        font-size: 30%;
-                        vertical-align: text-top;
+                        font-size: 40%;
+                        vertical-align: top;
                     }
                 }
 
-
-
                 .btn {
+                    color: $primary;
                     padding-left: 1.5rem;
                     padding-right: 1.5rem;
-                    box-shadow: $box-shadow-sm;
                 }
             }
 
             &-body {
                 color: $primary;
-                font-size: 1.25rem;
-
-                @include media-breakpoint-down(xs) {
-                    padding: .5rem;
-                    font-size: 8px;
-                }
             }
 
             &-cent {
@@ -178,16 +272,21 @@
     #secTrade {
         background: transparent url('../images/bg-trade.png') no-repeat center top;
         background-size: cover;
-        padding: 5rem 0;
 
-        @include media-breakpoint-down(lg) {
-            padding-bottom: 0;
+        .col-text {
+
+            h3,
+            a {
+                color: darken($primary, 15%);
+            }
         }
 
-        .trade-content {
-            position: relative;
+        @include media-breakpoint-up(xl) {
+            background-attachment: fixed;
 
-            @include media-breakpoint-up(xl) {
+            .container-content {
+                position: relative;
+
                 &:before {
                     content: '';
                     position: absolute;
@@ -196,31 +295,40 @@
                     left: 0;
                     margin: auto;
                     width: 100%;
-                    height: 75%;
+                    height: 60%;
                     background: transparent url('../images/bg-trade-color.png') no-repeat center top;
                     background-size: cover;
                     box-shadow: $box-shadow;
                 }
             }
+        }
 
-            &-text {
-                @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(lg) {
+            img {
+                max-height: 17rem
+            }
+
+            .col-text {
+                position: relative;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+
+                * {
                     position: relative;
-                    padding-top: 2.5rem;
-                    padding-bottom: 2.5rem;
+                }
 
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        margin: auto;
-                        width: 100%;
-                        height: 100%;
-                        background: transparent url('../images/bg-trade-color.png') no-repeat center top;
-                        background-size: cover;
-                    }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    width: 100%;
+                    height: 100%;
+                    background: transparent url('../images/bg-trade-color.png') no-repeat center top;
+                    background-size: cover;
+                    box-shadow: $box-shadow;
                 }
             }
         }
@@ -229,123 +337,53 @@
     #secWorld {
         background: transparent url('../images/bg-world.png') no-repeat left top;
         background-size: cover;
-        padding: 5rem 0;
-
-        h1 {
-            @include media-breakpoint-down(xs) {
-                font-size: 12px;
-            }
-        }
-
-        .world-content {
-            color: #E0F4FA;
-
-            h3 {
-                font-weight: 300;
-            }
-
-            @include media-breakpoint-down(xs) {
-
-                h2,
-                h3 {
-                    font-size: 8px;
-                }
-            }
-        }
     }
 
     #secLeader {
         background: transparent url('../images/bg-leader.png') no-repeat center top;
         background-size: cover;
-        padding: 5rem 0;
 
-        @include media-breakpoint-up(xl) {
-            background-attachment: fixed;
-
-            h1 {
-                font-size: 3.4375rem;
-            }
-
-            h2 {
-                font-size: 2.5rem;
-            }
-        }
-
-        h1 {
-            color: #EAFCFF;
-        }
-
-        h2 {
-            color: #C9F7FF;
-            font-weight: 400;
-        }
-
-        @include media-breakpoint-down(xs) {
-            h1 {
-                font-size: 15px;
-            }
-
-            h2 {
-                font-size: 10px;
-            }
+        .container-fluid {
+            max-width: 1790px;
         }
 
         .card {
-            border-radius: 2rem;
             border: unset;
+            border-radius: 1rem;
             overflow: hidden;
+            height: calc(100% - 1.5rem);
+            margin-bottom: 1.5rem;
             box-shadow: $box-shadow;
-            height: calc(100% - 3.375rem);
-            margin-bottom: 3.375rem;
+            @include transition($transition-base);
 
-            &-img-top {
-                position: relative;
-
-                img {
-                    width: 100%;
-                }
-
-
-            }
-
-            &-title {
-                position: absolute;
-                bottom: -1.75rem;
-                left: 0;
-                right: 0;
-                margin: auto;
-                background-color: #BAE1E6;
-                color: $primary;
-                text-align: center;
-                width: fit-content;
-                padding: .5rem 1.75rem;
-                font-size: 1.75rem;
-                border-radius: .5rem;
-
-
+            &:hover {
+                transform: translateY(-.5rem);
+                box-shadow: $box-shadow-lg;
+                @include transition($transition-base);
             }
 
             &-body {
                 color: $primary;
             }
 
-            @include media-breakpoint-up(xl) {
-                &-body {
-                    font-size: 1.4375rem;
-                    padding-top: 3rem;
+            &-title {
+                text-align: center;
+                margin: -2rem -1.25rem 1.5rem;
+
+                span {
+                    background: lighten($primary, 50%);
+                    padding: .5rem 1.5rem;
+                    border-radius: .5rem;
                 }
             }
+        }
 
-            @include media-breakpoint-down(xs) {
-                &-title {
-                    font-size: 8px;
-                    padding: .25rem .25rem;
-                    bottom: -1rem;
-                }
+        @include media-breakpoint-down(sm) {
+            .card-title {
+                font-size: .8rem;
 
-                &-body {
-                    font-size: 7px;
-                    font-weight: 300;
+                span {
+                    padding: .25rem .5rem;
                 }
             }
         }

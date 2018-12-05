@@ -7,6 +7,10 @@
     }
 
     &-brand {
+        img {
+            max-height: 80px
+        }
+
         @include media-breakpoint-down(lg) {
             flex-grow: 1;
             text-align: center;
