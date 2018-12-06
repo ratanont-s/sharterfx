@@ -7,6 +7,37 @@ html {
     font-size: .6rem;
 }
 
+body {
+    background: $body-bg url('../images/bg-body.png') no-repeat center top fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+main {
+    padding-top: 44px;
+
+    &.main {
+        display: flex;
+        flex-direction: row;
+        flex: 1 0 auto;
+    }
+}
+
+footer {
+    background: transparent url('../images/bg-footer.png') no-repeat center center;
+    background-size: cover;
+    padding: 1.5rem 0;
+    color: $light;
+    position: relative;
+
+    &.footer-landing {
+        background: transparent url('../images/bg-footer-landing.png') no-repeat center center;
+        background-size: cover;
+    }
+}
+
 @include media-breakpoint-up(sm) {
     html {
         font-size: .7rem;
@@ -29,11 +60,8 @@ html {
     html {
         font-size: 1rem;
     }
-}
 
-footer {
-    background: transparent url('../images/bg-footer.png') no-repeat center top;
-    background-size: cover;
-    padding: 1.5rem 0;
-    color: $light;
+    main {
+        padding-top: 80px;
+    }
 }

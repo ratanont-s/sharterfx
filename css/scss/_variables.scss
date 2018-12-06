@@ -29,6 +29,16 @@ $vip:#897829;
 $bg-vip-start:#B4AA35;
 $bg-vip-end:#4D3903;
 
+// Sidebar
+$bg-sidebar-active:#4A97B2;
+
+// Body
+$body-bg:#0E3441;
+
+// Card top
+$bg-ct-orange-start: #FFB14B;
+$bg-ct-orange-end: #490B14;
+
 // Navbar
 $navbar-padding-y: 0;
 $navbar-brand-padding-y:0;
@@ -38,3 +48,9 @@ $font-family-base: 'Kanit',
 sans-serif;
 $font-pt: 'PT Serif Caption',
 serif;
+
+// Breadcrumb
+$breadcrumb-divider: quote(">");
+$breadcrumb-divider-color:white;
+$breadcrumb-active-color:white;
+$breadcrumb-margin-bottom:unset;

@@ -1,0 +1,38 @@
+// BG gradient
+@mixin bg-gd-orange {
+    background: #ffb14b;
+    background: -moz-linear-gradient(-45deg, #ffb14b 0%, #f7804a 50%, #c54039 75%, #490b14 100%);
+    background: -webkit-linear-gradient(-45deg, #ffb14b 0%, #f7804a 50%, #c54039 75%, #490b14 100%);
+    background: linear-gradient(135deg, #ffb14b 0%, #f7804a 50%, #c54039 75%, #490b14 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb14b', endColorstr='#490b14', GradientType=1);
+}
+
+@mixin bg-gd-yellow {
+    background: #eaf618;
+    background: -moz-linear-gradient(-45deg, #eaf618 0%, #e5d932 50%, #96b351 75%, #4e602c 100%);
+    background: -webkit-linear-gradient(-45deg, #eaf618 0%, #e5d932 50%, #96b351 75%, #4e602c 100%);
+    background: linear-gradient(135deg, #eaf618 0%, #e5d932 50%, #96b351 75%, #4e602c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaf618', endColorstr='#4e602c', GradientType=1);
+}
+
+@mixin bg-gd-sky {
+    background: #4ffeff;
+    background: -moz-linear-gradient(-45deg, #4ffeff 0%, #2bcfcf 33%, #499a9d 66%, #499a9d 66%, #28617e 100%);
+    background: -webkit-linear-gradient(-45deg, #4ffeff 0%, #2bcfcf 33%, #499a9d 66%, #499a9d 66%, #28617e 100%);
+    background: linear-gradient(135deg, #4ffeff 0%, #2bcfcf 33%, #499a9d 66%, #499a9d 66%, #28617e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ffeff', endColorstr='#28617e', GradientType=1);
+}
+
+// Text shadow
+@mixin text-shadow {
+    text-shadow: .1rem .1rem .5rem $gray-800;
+}
+
+// Borders
+@mixin border-radius {
+    border-radius: 1rem;
+}
+
+@mixin border-circle {
+    border-radius: 100rem;
+}

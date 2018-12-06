@@ -1,0 +1,14 @@
+.breadcrumb {
+    background-color: unset;
+    padding-left: unset;
+    padding-right: unset;
+
+    &-page-name {
+        flex-grow: 1;
+        color: white;
+    }
+
+    &-item a {
+        color: white;
+    }
+}
