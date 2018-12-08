@@ -1,0 +1,86 @@
+.portfolio-page {
+    color: $bluelight;
+
+    .nav-pills {
+        .nav-link {
+            border-radius: 10rem;
+            color: $bluelight;
+
+            &:hover {
+                opacity: .8;
+            }
+
+            &.active {
+                background-color: rgba(black, .2);
+            }
+        }
+
+        &.show {
+            .nav-link {
+                background-color: rgba(black, .2);
+            }
+        }
+    }
+
+    .input-group {
+
+        &-append,
+        &-prepend {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &-text {
+            background-color: rgba(black, .2);
+            border: unset;
+            color: $bluelight;
+        }
+
+        .form-control {
+            background-color: rgba(black, .2);
+            border: unset;
+            color: $bluelight;
+
+            &-start {
+                border-top-left-radius: 10rem;
+                border-bottom-left-radius: 10rem;
+            }
+
+            &-end {
+                border-top-right-radius: 10rem;
+                border-bottom-right-radius: 10rem;
+            }
+        }
+    }
+
+    .card {
+        &-main {
+            @include border-radius;
+        }
+
+        &-sub {
+            border: unset;
+            background-color: $bluedark;
+        }
+    }
+
+    .col {
+        &-increase {
+            h5 {
+                color: $primary;
+            }
+        }
+
+        &-deposit {
+            h5 {
+                color: $yellowlight;
+            }
+        }
+
+        &-inctotal {
+            h5 {
+                color: $redlight;
+            }
+        }
+    }
+}
