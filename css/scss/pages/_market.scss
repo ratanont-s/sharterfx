@@ -1,0 +1,69 @@
+.market-page {
+    .card {
+        overflow: hidden;
+
+        &-h-100 {
+            height: calc(100% - 1.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        &-forex {
+            @include border-radius;
+            color: white;
+
+            .table {
+                thead {
+                    th {
+                        border-top: unset;
+                    }
+                }
+
+                tbody {
+                    tr:last-child {
+                        td {
+                            border-bottom: 1px solid;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-news {
+            @include border-radius;
+            border-top-left-radius: unset;
+            border-top-right-radius: unset;
+
+            .card-header {
+                border-top-left-radius: unset;
+                border-top-right-radius: unset;
+                background-color: $primary;
+                color: white;
+            }
+
+            .card-body {
+                color: white;
+
+                .card-title {
+                    margin-bottom: 0.25rem;
+                }
+
+                ul {
+                    margin-bottom: 0;
+
+                    li {
+                        margin-bottom: 1.5rem;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .card {
+                            background-color: rgba(white, .15);
+                            border-radius: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

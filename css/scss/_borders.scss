@@ -1,0 +1,5 @@
+.rounded {
+    &-lg {
+        @include border-radius;
+    }
+}
