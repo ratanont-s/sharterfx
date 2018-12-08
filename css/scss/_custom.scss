@@ -32,9 +32,17 @@ footer {
     color: $light;
     position: relative;
 
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+
     &.footer-landing {
         background: transparent url('../images/bg-footer-landing.png') no-repeat center center;
         background-size: cover;
+
+        @include media-breakpoint-down(lg) {
+            display: block;
+        }
     }
 }
 

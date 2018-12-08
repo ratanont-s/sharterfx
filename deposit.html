@@ -10,6 +10,8 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
+    <!-- bootstrap-fileinput -->
+    <link rel="stylesheet" href="./plugins/bootstrap-fileinput/css/fileinput.min.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -150,139 +152,80 @@
                 <!-- Site map -->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-page-name">MARKET</li>
+                        <li class="breadcrumb-page-name">DEPOSIT</li>
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Market</li>
+                        <li class="breadcrumb-item active" aria-current="page">Deposit</li>
                     </ol>
                 </nav>
 
                 <!-- Main content -->
-                <div class="market-page">
-                    <div class="card rounded-lg mb-4">
-                        <img src="./images/2018-08-02_4-10-14.png" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="row">
-                        <!-- forex -->
-                        <div class="col-lg-6">
-                            <div class="card card-body card-forex card-h-100 bg-dark text-center">
-                                <h5 class="card-title">FOREX SIGNAL</h5>
-                                <table class="table mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>Exchange</th>
-                                            <th>Sell/Buy</th>
-                                            <th>Sl</th>
-                                            <th>TP</th>
-                                            <th>Time</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Gdpcsf</td>
-                                            <td>Sell@ 1.30062</td>
-                                            <td>1.30640</td>
-                                            <td>1.02980</td>
-                                            <td>12:01:44</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gdpcsf</td>
-                                            <td>Sell@ 1.30062</td>
-                                            <td>1.30640</td>
-                                            <td>1.02980</td>
-                                            <td>12:01:44</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gdpcsf</td>
-                                            <td>Sell@ 1.30062</td>
-                                            <td>1.30640</td>
-                                            <td>1.02980</td>
-                                            <td>12:01:44</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gdpcsf</td>
-                                            <td>Sell@ 1.30062</td>
-                                            <td>1.30640</td>
-                                            <td>1.02980</td>
-                                            <td>12:01:44</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gdpcsf</td>
-                                            <td>Sell@ 1.30062</td>
-                                            <td>1.30640</td>
-                                            <td>1.02980</td>
-                                            <td>12:01:44</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gdpcsf</td>
-                                            <td>Sell@ 1.30062</td>
-                                            <td>1.30640</td>
-                                            <td>1.02980</td>
-                                            <td>12:01:44</td>
-                                        </tr>
-                                        <tr>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                <div class="deposit-page">
+                    <div class="card card-body card-depo bg-dark rounded-lg text-white text-center shadow-sm">
+                        <div class="col-xl-6 mx-auto">
+                            <h4 class="card-title">Name Surname</h4>
+                            <h5 class="card-subtitle">ID #12345678</h5>
+                            <div class="card card-body bg-primary rounded-lg my-3">
+                                <p>Please tranfer money to this bank account</p>
+                                <ul class="list-unstyled font-weight-light">
+                                    <li>Bank Name : Banking bank</li>
+                                    <li>Bank Number : 1234567890</li>
+                                </ul>
+                                <p>After that please choose how many you want to deposit
+                                    and upload your transcript.
+                                </p>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card card-h-100 rounded-lg">
-                                <img src="./images/2018-08-02_4-11-37.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- News -->
-                    <div class="card card-news bg-dark">
-                        <h5 class="card-header text-center">NEWS</h5>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <div class="card card-body">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img src="./images/news1.png" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="col-9">
-                                                <h5 class="card-title">EURO MACRO</h5>
-                                                <h6 class="card-subtitle">2018-08-01 12:15:45</h6>
-                                                <p class="card-text mt-3">“การเติบโตของตัวเลข GDP ลดลงอยู่มาอยู่ที่
-                                                    0.3% qoq จาก 0.4%
-                                                    ในไตรมาสแรกและลดลงจากอัตราการเติบโต 0.7% ที่เราเห็นในช่วงไตรมาส
-                                                    สุดท้ายของปีพ.ศ. 2560 ซึ่งทำให้เกิดคำถามว่าการชะลอตัวดังกล่าว
-                                                    เป็นสัญญาณที่ส่งผลในการฟื้นตัวหรือไม่</p>
-                                            </div>
+                            <h5 class="card-subtitle mb-3">Deposit</h5>
+                            <form action="/" class="text-left">
+                                <div class="form-row">
+                                    <div class="col-12 col-sm-6 col-md-3 form-group">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio1">50,000</label>
                                         </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="card card-body">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img src="./images/news1.png" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="col-9">
-                                                <h5 class="card-title">EURO MACRO</h5>
-                                                <h6 class="card-subtitle">2018-08-01 12:15:45</h6>
-                                                <p class="card-text mt-3">“การเติบโตของตัวเลข GDP ลดลงอยู่มาอยู่ที่
-                                                    0.3% qoq จาก 0.4%
-                                                    ในไตรมาสแรกและลดลงจากอัตราการเติบโต 0.7% ที่เราเห็นในช่วงไตรมาส
-                                                    สุดท้ายของปีพ.ศ. 2560 ซึ่งทำให้เกิดคำถามว่าการชะลอตัวดังกล่าว
-                                                    เป็นสัญญาณที่ส่งผลในการฟื้นตัวหรือไม่</p>
-                                            </div>
+                                    <div class="col-12 col-sm-6 col-md-3 form-group">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">100,000</label>
                                         </div>
                                     </div>
-                                </li>
-                            </ul>
+                                    <div class="col-12 col-sm-6 col-md-3 form-group">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio3">200,000</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-3 form-group">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio4">400,000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-row align-items-center">
+                                        <div class="col-auto">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio5">Other</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input type="text" class="form-control badge-pill">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input id="input-upload" name="input-upload" type="file" class="file"
+                                        data-browse-on-zone-click="true" data-show-browse="false" data-show-caption="false"
+                                        data-show-cancel="false" data-drop-zone-title="Upload your transcript">
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary badge-pill px-4">Submit</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -310,6 +253,7 @@
     <!-- Optional JavaScript -->
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./plugins/bootstrap-fileinput/js/fileinput.min.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,14 @@
     color: white;
     height: 100%;
 
+    @include media-breakpoint-down(lg) {
+        left: calc(-255px + -.5rem);
+
+        &+.content {
+            padding-left: 0;
+        }
+    }
+
     &-profile {
         padding: .5rem 1rem;
         display: flex;

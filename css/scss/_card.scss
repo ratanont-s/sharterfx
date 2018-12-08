@@ -57,6 +57,10 @@
             }
         }
     }
+
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
 }
 
 .card-acc-inform,
