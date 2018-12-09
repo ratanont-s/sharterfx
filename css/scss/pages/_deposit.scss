@@ -1,0 +1,67 @@
+.deposit-page {
+    color: white;
+    text-align: center;
+
+    .card-depo {
+        background-color: $dark;
+        @include border-radius;
+        box-shadow: $box-shadow;
+        margin-bottom: 1.5rem;
+        padding-left: 25%;
+        padding-right: 25%;
+
+        .card-inform {
+            background-color: $primary;
+            margin: 1.5rem 0;
+            @include border-radius;
+        }
+
+        .file-preview {
+            background-color: white;
+            border: unset;
+            border-radius: unset;
+
+            .fileinput-remove {
+                display: none;
+            }
+
+            .file-drop-zone {
+                border: unset;
+                margin: unset;
+                padding: unset;
+
+                &-title {
+                    color: $gray-400;
+                }
+            }
+
+            .file-drop-zone-title {
+                padding: 5rem 0;
+            }
+        }
+    }
+
+    .card-deposit-his {
+        @include border-radius;
+        overflow: hidden;
+    }
+
+    @include media-breakpoint-down(lg) {
+        .card-depo .card-inform {
+            margin-left: -50%;
+            margin-right: -50%;
+            border-radius: unset;
+        }
+
+        .card-deposit-his {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        .card-depo .file-preview {
+            max-width: 18rem;
+            margin: auto;
+        }
+    }
+}

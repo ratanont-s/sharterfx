@@ -1,0 +1,42 @@
+.withdraw-page {
+    color: white;
+
+    .form-head {
+
+        .btn {
+            border-radius: 10rem !important;
+            border: .25rem solid $primary;
+
+            &.active {
+                box-shadow: $box-shadow;
+                background-color: lighten($primary, 10%);
+                border-color: $primary;
+            }
+        }
+    }
+
+    .card {
+        background-color: $dark;
+        @include border-radius;
+        margin: 1.5rem 0;
+        box-shadow: $box-shadow;
+
+        &-title {
+            text-align: center;
+        }
+
+        &-with-inform {
+
+            .card-soucre {
+                @include bg-gd-orange;
+                @include text-shadow;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .card-withdraw-his {
+            display: none;
+        }
+    }
+}

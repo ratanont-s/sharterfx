@@ -63,42 +63,38 @@
     }
 }
 
-.card-acc-inform,
-.card-withdraw-his {
-    background-color: $dark;
+.card-withdraw-his,
+.card-deposit-his {
+    border: unset;
     @include border-radius;
-    overflow: hidden;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    background-color: $dark;
     color: white;
+    box-shadow: $box-shadow;
 
-    .card {
-        &-header {
-            height: 20rem;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            padding-bottom: 2rem;
-            position: relative;
-            border-bottom: unset;
+    .card-header {
+        background-color: $primary;
+        text-align: center;
+        border-top-left-radius: unset;
+        border-top-right-radius: unset;
+    }
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba($dark, .8);
+    .card-body {
+        .table {
+            margin-bottom: 0;
+
+            thead {
+                border-bottom: 1px solid;
+                text-align: center;
+
+                tr th:first-child {
+                    border-right: 1px solid;
+                }
             }
 
-            .card-img {
-                width: 8rem;
-                height: 8rem;
-                object-fit: cover;
-                @include border-circle;
-                position: relative;
+            tbody tr td:first-child {
+                border-right: 1px solid;
             }
         }
     }

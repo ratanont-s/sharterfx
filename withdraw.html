@@ -10,7 +10,6 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
-
     <!-- Style CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -66,31 +65,31 @@
             </div>
             <div class="sidebar-menu">
                 <nav class="nav flex-column">
-                    <a class="nav-link active" href="#">
+                    <a class="nav-link " href="./account.html">
                         <div class="nav-icon">
                             <img src="./images/icon-account.png" alt="">
                         </div>
                         <div class="nav-title">Account</div>
                     </a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link " href="./portfolio.html">
                         <div class="nav-icon">
                             <img src="./images/icon-portfolio.png" alt="">
                         </div>
                         <div class="nav-title">Portfolio</div>
                     </a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link " href="./market.html">
                         <div class="nav-icon">
                             <img src="./images/icon-market.png" alt="">
                         </div>
                         <div class="nav-title">Market</div>
                     </a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link " href="./deposit.html">
                         <div class="nav-icon">
                             <img src="./images/icon-deposit.png" alt="">
                         </div>
                         <div class="nav-title">Deposit</div>
                     </a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link active" href="./withdraw.html">
                         <div class="nav-icon">
                             <img src="./images/icon-withdraw.png" alt="">
                         </div>
@@ -151,106 +150,85 @@
                 <!-- Site map -->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-page-name">ACCOUNT</li>
+                        <li class="breadcrumb-page-name">WITHDRAW</li>
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        <li class="breadcrumb-item active" aria-current="page">Withdraw</li>
                     </ol>
                 </nav>
 
                 <!-- Main content -->
-                <div class="account-page">
+                <div class="withdraw-page">
                     <div class="row">
-                        <!-- acc _inform -->
-                        <div class="col-xl-6">
-                            <div class="card card-acc-inform">
-                                <div class="card-header" style="background-image: url('./images/user.png')">
-                                    <img src="./images/user.png" class="card-img" alt="">
+                        <div class="col-lg-6">
+                            <form action="/">
+                                <!-- with inform -->
+                                <div class="card card-body card-with-inform">
+                                    <h5 class="card-title">Withdraw Information</h5>
+                                    <div class="form-row form-head">
+                                        <div class="col-4">
+                                            <button type="button" class="btn btn-primary btn-block active">Profit</button>
+                                        </div>
+                                        <div class="col-4">
+                                            <button type="button" class="btn btn-primary btn-block">Commission</button>
+                                        </div>
+                                        <div class="col-4">
+                                            <button type="button" class="btn btn-primary btn-block">Capital</button>
+                                        </div>
+                                    </div>
+                                    <div class="card card-body card-soucre">
+                                        <div class="form-row align-items-center">
+                                            <div class="col-5">
+                                                <h5 class="text-center mb-0">PROFIT</h5>
+                                            </div>
+                                            <div class="col-7">
+                                                <h5>500,000 THB</h5>
+                                                <p class="mb-0">*1,000,000 - 50%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row align-items-center">
+                                        <label for="" class="col-auto mb-0">Amount</label>
+                                        <div class="col">
+                                            <input type="text" class="form-control badge-pill">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="px-xl-5">
+
+                                <!-- req with -->
+                                <div class="card card-body card-req-with">
+                                    <h5 class="card-title">Request Withdraw</h5>
                                     <table class="table table-borderless">
-                                        <thead class="text-center">
-                                            <tr>
-                                                <th colspan="2">Name Surname</th>
-                                            </tr>
-                                        </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Account ID</td>
+                                                <td>Name</td>
+                                                <td>Name Surname</td>
+                                            </tr>
+                                            <tr>
+                                                <td>User ID</td>
                                                 <td>#12345678</td>
                                             </tr>
                                             <tr>
-                                                <td>Account Type</td>
-                                                <td>VIP</td>
+                                                <td>Bank name</td>
+                                                <td>Banking bank</td>
                                             </tr>
                                             <tr>
-                                                <td>Class</td>
-                                                <td></td>
+                                                <td>Bank account</td>
+                                                <td>Name Surname</td>
                                             </tr>
                                             <tr>
-                                                <td>Profit share</td>
-                                                <td>50%</td>
+                                                <td>Bank number</td>
+                                                <td>1200000991</td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                </div>
-                                <div>
-                                    <div class="bg-primary text-center py-3">
-                                        <h4 class="font-weight-normal mb-0">New Account (VIP)</h4>
-                                    </div>
-                                    <div class="px-xl-5">
-                                        <table class="table table-borderless ">
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <label for="">Link open</label>
-                                                        <input type="text" class="form-control" value="https:\\asdfghjkl.com">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <label for="">Active code</label>
-                                                        <input type="text" class="form-control" value="#fdrfrt125khlppkkp88">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Signup date</td>
-                                                    <td>01/07/2018</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Update</td>
-                                                    <td>06/07/2018</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary px-4 badge-pill">Submit</button>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="bg-primary text-center py-3">
-                                        <h4 class="font-weight-normal mb-0">Resume</h4>
-                                    </div>
-                                    <div class="px-xl-5">
-                                        <table class="table table-borderless">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        Education
-                                                        <p class="mb-0">Bachelor's degree at ABC Univetsity</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Address
-                                                        <p class="mb-0">123 sathorn tower, sathorn,
-                                                            bangkok 12345, Thailand</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-xl-6">
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
                             <!-- withdraw-his -->
                             <div class="card card-withdraw-his">
                                 <h5 class="card-header">Withdraw History ID #12345678</h5>
@@ -284,38 +262,25 @@
                                                 <td>25,000 THB</td>
                                                 <td>257fag8hj56g</td>
                                             </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <!-- deposit-his -->
-                            <div class="card card-deposit-his">
-                                <h5 class="card-header">Deposit History ID #12345678</h5>
-                                <div class="card-body">
-                                    <table class="table table-borderless">
-                                        <thead>
-                                            <tr>
-                                                <th>Time - Date</th>
-                                                <th>Withdraw</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
                                             <tr>
                                                 <td>00.00 - 28/06/2018</td>
                                                 <td>25,000 THB</td>
-                                                <td>Pending</td>
+                                                <td>257fag8hj56g</td>
                                             </tr>
                                             <tr>
                                                 <td>00.00 - 28/06/2018</td>
                                                 <td>25,000 THB</td>
-                                                <td>Pending</td>
+                                                <td>257fag8hj56g</td>
                                             </tr>
                                             <tr>
                                                 <td>00.00 - 28/06/2018</td>
                                                 <td>25,000 THB</td>
-                                                <td>Approved</td>
+                                                <td>257fag8hj56g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>00.00 - 28/06/2018</td>
+                                                <td>25,000 THB</td>
+                                                <td>257fag8hj56g</td>
                                             </tr>
                                         </tbody>
                                     </table>

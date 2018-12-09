@@ -105,4 +105,8 @@
     padding-bottom: 5rem;
     padding-left: calc(255px + .5rem);
     min-height: 100vh;
+
+    @include media-breakpoint-down(lg) {
+        min-height: calc(100vh - 44px);
+    }
 }

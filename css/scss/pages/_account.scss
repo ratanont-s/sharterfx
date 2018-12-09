@@ -1,0 +1,46 @@
+.account-page {
+
+    .card-acc-inform {
+        background-color: $dark;
+        @include border-radius;
+        overflow: hidden;
+        color: white;
+
+        .card {
+            &-header {
+                height: 20rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 2rem;
+                position: relative;
+                border-bottom: unset;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($dark, .8);
+                }
+
+                .card-img {
+                    width: 8rem;
+                    height: 8rem;
+                    object-fit: cover;
+                    @include border-circle;
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    .card-withdraw-his {
+        border-radius: unset;
+    }
+}
