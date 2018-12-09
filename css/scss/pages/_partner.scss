@@ -1,0 +1,67 @@
+.partner-page {
+    color: white;
+
+    .card {
+        background-color: $dark;
+        margin-bottom: 1.5rem;
+        box-shadow: $box-shadow;
+        border: unset;
+        @include border-radius;
+        overflow: hidden;
+
+        &-header {
+            background-color: $primary;
+            text-align: center;
+        }
+
+        &-acc-inform {
+            margin-bottom: 0;
+            border-bottom-left-radius: unset;
+            border-bottom-right-radius: unset;
+
+            .card-header {
+                .badge {
+                    @include gradient-radial($inner-color: #F7D239, $outer-color: #F06442);
+                    border-radius: 100%;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+            }
+        }
+
+        &-condition {
+            border-top-left-radius: unset;
+            border-top-right-radius: unset;
+
+            .card-header {
+                border-top-left-radius: unset;
+                border-top-right-radius: unset;
+            }
+        }
+
+        &-partner {
+            .table {
+                thead tr th {
+                    border-top: unset;
+                }
+            }
+        }
+    }
+
+    .input-group {
+        .form-control {
+            border-radius: unset;
+        }
+
+        .btn {
+            height: calc(2.25rem + 2px);
+            border-radius: unset;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
