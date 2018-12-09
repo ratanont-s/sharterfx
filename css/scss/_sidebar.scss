@@ -54,6 +54,12 @@
                 &.active {
                     position: relative;
 
+                    .nav-icon {
+                        img {
+                            background-color: $bg-sidebar-active;
+                        }
+                    }
+
                     &::before {
                         content: '';
                         position: absolute;
@@ -93,6 +99,7 @@
                     height: 2.5rem;
                     object-fit: cover;
                     border-radius: 10rem;
+                    background-color: lighten($bluedark, 5%);
                 }
             }
         }

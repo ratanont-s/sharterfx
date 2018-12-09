@@ -26,6 +26,33 @@
     background-clip: padding-box;
 }
 
+@mixin bg-gd-purple {
+    background: #a74fff;
+    background: -moz-linear-gradient(-45deg, #a74fff 0%, #702bcf 37%, #494c9d 68%, #28327e 100%);
+    background: -webkit-linear-gradient(-45deg, #a74fff 0%, #702bcf 37%, #494c9d 68%, #28327e 100%);
+    background: linear-gradient(135deg, #a74fff 0%, #702bcf 37%, #494c9d 68%, #28327e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a74fff', endColorstr='#28327e', GradientType=1);
+    background-clip: padding-box;
+}
+
+@mixin bg-gd-green {
+    background: #9ef28a;
+    background: -moz-linear-gradient(-45deg, #9ef28a 0%, #3ba550 34%, #5a8b28 65%, #275306 100%);
+    background: -webkit-linear-gradient(-45deg, #9ef28a 0%, #3ba550 34%, #5a8b28 65%, #275306 100%);
+    background: linear-gradient(135deg, #9ef28a 0%, #3ba550 34%, #5a8b28 65%, #275306 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ef28a', endColorstr='#275306', GradientType=1);
+    background-clip: padding-box;
+}
+
+@mixin bg-gd-blue {
+    background: #558fa3;
+    background: -moz-linear-gradient(-45deg, #558fa3 0%, #3d90ad 25%, #1e576b 50%, #0e3441 100%);
+    background: -webkit-linear-gradient(-45deg, #558fa3 0%, #3d90ad 25%, #1e576b 50%, #0e3441 100%);
+    background: linear-gradient(135deg, #558fa3 0%, #3d90ad 25%, #1e576b 50%, #0e3441 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#558fa3', endColorstr='#0e3441', GradientType=1);
+    background-clip: padding-box;
+}
+
 // Text shadow
 @mixin text-shadow {
     text-shadow: .1rem .1rem .5rem $gray-800;

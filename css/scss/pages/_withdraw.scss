@@ -1,36 +1,65 @@
 .withdraw-page {
     color: white;
 
-    .form-head {
-
-        .btn {
-            border-radius: 10rem !important;
-            border: .25rem solid $primary;
-
-            &.active {
-                box-shadow: $box-shadow;
-                background-color: lighten($primary, 10%);
-                border-color: $primary;
-            }
-        }
-    }
-
     .card {
         background-color: $dark;
         @include border-radius;
-        margin: 1.5rem 0;
         box-shadow: $box-shadow;
+        margin-bottom: 1.5rem;
 
         &-title {
             text-align: center;
         }
 
         &-with-inform {
+            .nav-pills {
+                .nav-item {
+                    margin-right: .25rem;
 
-            .card-soucre {
-                @include bg-gd-orange;
-                @include text-shadow;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                .nav-link {
+                    background-color: $primary;
+                    color: white;
+                    border-radius: 10rem;
+                    border: .25rem solid $primary;
+
+                    &.active {
+                        background-color: lighten($primary, 10%);
+                    }
+                }
             }
+
+            .tab-content {
+                .card-soucre {
+                    @include text-shadow;
+                }
+
+                #pills {
+                    &-profit {
+                        .card-soucre {
+                            @include bg-gd-orange;
+                        }
+                    }
+
+                    &-commission {
+                        .card-soucre {
+                            @include bg-gd-purple;
+                        }
+                    }
+
+                    &-capital {
+                        .card-soucre {
+                            @include bg-gd-green;
+                        }
+                    }
+                }
+            }
+
+
         }
     }
 
