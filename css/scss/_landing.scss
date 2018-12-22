@@ -74,6 +74,12 @@
             white-space: nowrap;
 
             .d-flex {
+                &.justify-content-xxl-center {
+                    @media (min-width: 1601px) {
+                        justify-content: center;
+                    }
+                }
+
                 .flex-item {
                     margin-right: -13rem;
                     // margin-right: -6rem;
