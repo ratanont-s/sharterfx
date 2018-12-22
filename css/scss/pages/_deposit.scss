@@ -16,29 +16,29 @@
             @include border-radius;
         }
 
-        .file-preview {
-            background-color: white;
-            border: unset;
-            border-radius: unset;
+        // .file-preview {
+        //     background-color: white;
+        //     border: unset;
+        //     border-radius: unset;
 
-            .fileinput-remove {
-                display: none;
-            }
+        //     .fileinput-remove {
+        //         display: none;
+        //     }
 
-            .file-drop-zone {
-                border: unset;
-                margin: unset;
-                padding: unset;
+        //     .file-drop-zone {
+        //         border: unset;
+        //         margin: unset;
+        //         padding: unset;
 
-                &-title {
-                    color: $gray-400;
-                }
-            }
+        //         &-title {
+        //             color: $gray-400;
+        //         }
+        //     }
 
-            .file-drop-zone-title {
-                padding: 5rem 0;
-            }
-        }
+        //     .file-drop-zone-title {
+        //         padding: 5rem 0;
+        //     }
+        // }
     }
 
     .card-deposit-his {
