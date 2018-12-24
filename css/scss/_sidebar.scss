@@ -1,119 +1,132 @@
 .sidebar {
-    position: fixed;
-    width: 255px;
-    background-color: $dark;
-    color: white;
-    height: 100%;
+  position: fixed;
+  width: 255px;
+  background-color: $dark;
+  color: white;
+  height: 100%;
 
-    @include media-breakpoint-down(lg) {
-        left: calc(-255px + -.5rem);
-
-        &+.content {
-            padding-left: 0;
-        }
+  @include media-breakpoint-down(lg) {
+    width: auto;
+    .profile-name,
+    .nav-title {
+      display: none;
     }
+    & + .content {
+      padding-left: 6rem;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    left: calc(-255px + -0.5rem);
 
-    &-profile {
-        padding: .5rem 1rem;
+    & + .content {
+      padding-left: 0;
+    }
+  }
+
+  &-profile {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    background: #558fa3;
+    background: -moz-linear-gradient(
+      -45deg,
+      #558fa3 0%,
+      #3d90ad 25%,
+      #1e576b 50%,
+      #0e3441 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      #558fa3 0%,
+      #3d90ad 25%,
+      #1e576b 50%,
+      #0e3441 100%
+    );
+    background: linear-gradient(
+      135deg,
+      #558fa3 0%,
+      #3d90ad 25%,
+      #1e576b 50%,
+      #0e3441 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#558fa3', endColorstr='#0e3441', GradientType=1);
+    .profile {
+      &-img {
+        margin-right: 1rem;
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+          object-fit: cover;
+          border-radius: 10rem;
+        }
+      }
+      &-name {
+        color: white;
+      }
+    }
+  }
+  &-menu {
+    height: 100%;
+    .nav {
+      &-link {
         display: flex;
         align-items: center;
-        background: #558fa3;
-        background: -moz-linear-gradient(-45deg, #558fa3 0%, #3d90ad 25%, #1e576b 50%, #0e3441 100%);
-        background: -webkit-linear-gradient(-45deg, #558fa3 0%, #3d90ad 25%, #1e576b 50%, #0e3441 100%);
-        background: linear-gradient(135deg, #558fa3 0%, #3d90ad 25%, #1e576b 50%, #0e3441 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#558fa3', endColorstr='#0e3441', GradientType=1);
-
-        .profile {
-
-            &-img {
-                margin-right: 1rem;
-
-                img {
-                    width: 2.5rem;
-                    height: 2.5rem;
-                    object-fit: cover;
-                    border-radius: 10rem;
-                }
+        color: white;
+        &.active {
+          position: relative;
+          .nav-icon {
+            img {
+              background-color: $bg-sidebar-active;
             }
-
-            &-name {
-                color: white;
-            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 4rem;
+            margin: auto;
+            width: calc(100% - 3.5rem);
+            height: 70%;
+            background-color: $bg-sidebar-active;
+            border-top-left-radius: 10rem;
+            border-bottom-left-radius: 10rem;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0.01rem;
+            right: -0.5rem;
+            width: 0;
+            height: 0;
+            border-left: 0.5rem solid darken($bg-sidebar-active, 15%);
+            border-bottom: 0.5rem solid transparent;
+          }
+          * {
+            position: relative;
+          }
         }
-    }
-
-    &-menu {
-        height: 100%;
-
-        .nav {
-            &-link {
-                display: flex;
-                align-items: center;
-                color: white;
-
-                &.active {
-                    position: relative;
-
-                    .nav-icon {
-                        img {
-                            background-color: $bg-sidebar-active;
-                        }
-                    }
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 4rem;
-                        margin: auto;
-                        width: calc(100% - 3.5rem);
-                        height: 70%;
-                        background-color: $bg-sidebar-active;
-                        border-top-left-radius: 10rem;
-                        border-bottom-left-radius: 10rem;
-                    }
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        bottom: .01rem;
-                        right: -.5rem;
-                        width: 0;
-                        height: 0;
-                        border-left: 0.5rem solid darken($bg-sidebar-active, 15%);
-                        border-bottom: .5rem solid transparent;
-                    }
-
-                    * {
-                        position: relative;
-                    }
-                }
-            }
-
-            &-icon {
-                margin-right: 1rem;
-
-                img {
-                    width: 2.5rem;
-                    height: 2.5rem;
-                    object-fit: cover;
-                    border-radius: 10rem;
-                    background-color: lighten($bluedark, 5%);
-                }
-            }
+      }
+      &-icon {
+        margin-right: 1rem;
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+          object-fit: cover;
+          border-radius: 10rem;
+          background-color: lighten($bluedark, 5%);
         }
+      }
     }
+  }
 }
-
 .content {
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-    padding-left: calc(255px + .5rem);
-    min-height: 100vh;
-
-    @include media-breakpoint-down(lg) {
-        min-height: calc(100vh - 44px);
-    }
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  padding-left: calc(255px + 0.5rem);
+  min-height: 100vh;
+  @include media-breakpoint-down(lg) {
+    min-height: calc(100vh - 44px);
+  }
 }
