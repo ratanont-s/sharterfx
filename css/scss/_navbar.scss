@@ -1,27 +1,33 @@
 .navbar {
-    justify-content: flex-start;
-    box-shadow: $box-shadow-sm;
+  justify-content: flex-start;
+  box-shadow: $box-shadow-sm;
 
-    &-toggler {
-        border: unset;
+  &-toggler {
+    border: unset;
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &-brand {
+    img {
+      max-height: 80px;
     }
 
-    &-brand {
-        img {
-            max-height: 80px
-        }
+    @include media-breakpoint-down(lg) {
+      flex-grow: 1;
+      text-align: center;
+      height: 44px;
+      font-size: 20px;
+      font-weight: 700;
 
-        @include media-breakpoint-down(lg) {
-            flex-grow: 1;
-            text-align: center;
-            height: 44px;
-            font-size: 20px;
-            font-weight: 700;
-
-            img {
-                height: 100%;
-                vertical-align: middle;
-            }
-        }
+      img {
+        height: 100%;
+        vertical-align: middle;
+      }
     }
+  }
 }

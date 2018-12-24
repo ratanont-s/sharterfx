@@ -4,15 +4,28 @@
   background-color: $dark;
   color: white;
   height: 100%;
-
+  @include transition($transition-base);
   @include media-breakpoint-down(lg) {
-    width: auto;
+    width: 80px;
     .profile-name,
     .nav-title {
       display: none;
     }
     & + .content {
+      @include transition($transition-base);
       padding-left: 6rem;
+    }
+    &.show {
+      width: 255px;
+      @include transition($transition-base);
+      .profile-name,
+      .nav-title {
+        display: block;
+      }
+      & + .content {
+        @include transition($transition-base);
+        padding-left: calc(255px + 0.5rem);
+      }
     }
   }
   @include media-breakpoint-down(sm) {
